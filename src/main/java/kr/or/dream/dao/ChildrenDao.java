@@ -8,7 +8,10 @@ import javax.sql.DataSource;
 
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.core.SqlParameter;
+import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
 import org.springframework.stereotype.Repository;
 
@@ -27,7 +30,13 @@ public class ChildrenDao {
 				.withTableName("children");
 	}
 	
+	//DB에 저장된 모든 어린이 조회
 	public List<Children> selectAllChildren(){
 		return jdbc.query(SELECT_CHILDREN_ALL, Collections.EMPTY_MAP, childrenRowMapper);
+	}
+	//DB에 어린이 추가
+	public int addChild(Children c) {
+		SqlParameterSource params = new BeanPropertySqlParameterSource(c);
+		return insertAction.execute(params);
 	}
 }
