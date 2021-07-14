@@ -49,7 +49,7 @@ public class ChildrenDao {
 		return jdbc.update(UPDATE_CHILDREN, params);
 	}
 	//어린이 삭제
-	public int deleteChild(int no) {
+	public int deleteChild(Integer no) {
 		Map<String,?> params = Collections.singletonMap("no", no);
 		return jdbc.update(DELETE_CHILDREN,params);
 	}
