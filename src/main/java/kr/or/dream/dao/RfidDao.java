@@ -60,4 +60,14 @@ public class RfidDao {
 		Map<String,?>params = Collections.singletonMap("hexCode", hexCode);
 		return jdbc.update(DELETE_RFID, params);
 	}
+	//Admin인지 확인
+	public String isAdmin(String hexCode) {
+		Map<String,?>params = Collections.singletonMap("hexCode", hexCode);
+		return jdbc.queryForObject(SELECT_RFID_ADMIN, params, String.class);
+	}
+	//모든 status값이 out인지 확인 (모든 어린이가 버스에서 하차하였는지)
+	public Integer isAllOut() {
+		//관리자가 아니고 in(승차)인 rfid개수를 셈으로써 개수가 0이 나와야 버스에 아무도 없는것.
+		return jdbc.queryForObject(SELECT_RFID_ALL_OUT, Collections.EMPTY_MAP, Integer.class);
+	}
 }

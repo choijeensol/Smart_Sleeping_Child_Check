@@ -41,6 +41,12 @@ public class RfidApiController {
 	public int updateRfid(@PathVariable String hexCode, @RequestBody Rfid rfid) {
 		rfid.setHexCode(hexCode);
 		return rfidService.updateRfid(rfid);
+		
+	}
+	
+	@PutMapping("/rfid/status/{hexCode}")
+	public int updateStatus(@PathVariable String hexCode, @RequestBody String status) {
+		return rfidService.updateRfidStatus(hexCode,status);
 	}
 	
 	@DeleteMapping("/rfid/{hexCode}")

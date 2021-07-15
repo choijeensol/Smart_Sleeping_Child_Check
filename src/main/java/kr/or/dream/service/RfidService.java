@@ -10,4 +10,5 @@ public interface RfidService {
 	public int addRfid(Rfid r);
 	public int updateRfid(Rfid r);
 	public int deleteRfid(String hexCode);
+	public int updateRfidStatus(String hexCode,String status);
 }
