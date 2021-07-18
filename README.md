@@ -1,9 +1,9 @@
  # Smart_Sleeping_Child_Check
 
 ## &#128106; 팀원소개
-[박민기](https://github.com/JGatsby-29) (RFID TAG / 아두이노 ↔ 서버 통신 / 발표 / 자료조사)      
-[정승주](https://github.com/ilovesecu) (WEB API / WEB PAGE / HW개발 / 자료조사)   
-[최진솔](https://github.com/choijeensol) (GPS / PI Camera Streaming / 라즈베리파이 ↔ 서버 통신 / 자료조사)                            
+[박민기](https://github.com/JGatsby-29)  RFID TAG / 아두이노 ↔ 서버 통신 / 발표 / 자료조사      
+[정승주](https://github.com/ilovesecu)  WEB API / WEB PAGE / HW개발 / 자료조사      
+[최진솔](https://github.com/choijeensol)  GPS / PI Camera Streaming / 라즈베리파이 ↔ 서버 통신 / 자료조사                               
 
 ## &#128187; 프로젝트 소개
 Smart Sleeping Child Check입니다.
