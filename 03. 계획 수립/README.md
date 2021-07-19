@@ -1,7 +1,6 @@
-
-![image](https://user-images.githubusercontent.com/75825682/126065052-bc590c58-8df1-42dc-8676-a0379aa34465.png)
-
 # 프로젝트 수행일정
+
+![image](https://user-images.githubusercontent.com/75825682/126099965-785657ac-4d73-4c43-abaf-99680812f967.png)
 
 ① 아이디어 계획
 - 2021.07.06. Brainstorming
